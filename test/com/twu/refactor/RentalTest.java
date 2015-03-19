@@ -10,9 +10,9 @@ import static org.junit.Assert.assertEquals;
 public class RentalTest {
     @Test
     public void test_Rental_gives_amount_toBePaid() {
-        Movie run = new Movie("run",Movie.REGULAR);
+        Movie run = new Movie("run", MoviePricingCategory.REGULAR);
         Rental r =new Rental( run,2);
-        assertEquals(4.0,r.getAmount(),0.0);
+        assertEquals(2.0,r.getAmount(),0.0);
 
     }
 }
